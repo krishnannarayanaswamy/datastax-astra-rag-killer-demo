@@ -1,0 +1,6 @@
+ragstack-ai
+Flask
+Flask-Cors
+python-dotenv
+gunicorn
+black
