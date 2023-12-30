@@ -1,6 +1,6 @@
 import logging
 from flask import Flask, jsonify, request
-from search_products import search
+from backend.api.search_products import search
 from flask_cors import CORS
 
 app = Flask(__name__)

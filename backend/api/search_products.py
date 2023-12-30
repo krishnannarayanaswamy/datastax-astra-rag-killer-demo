@@ -1,6 +1,6 @@
 import os
-from datamodel import SearchResult
-from config import (
+from backend.api.datamodel import SearchResult
+from backend.api.config import (
     STYLE_MAPPING,
     SEASON_COLUMNNAME,
     GENDER_COLUMNNAME,
@@ -60,7 +60,7 @@ def search(
 
     return [
         SearchResult(
-            id=r.metadata.get("basename"),
+            id=r.metadata.get("title"),
             name=r.metadata.get("basename"),
             price=float(r.metadata.get("price")),
             image_url=r.metadata.get("s3_http"),
